@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@media (min-width:1440px){
+  header{height: 52vw;}
+    header nav {
+    width: 10%;
+    z-index: 9999;
+    }
+    header nav .navbar a{ width: 50px; height: 50px;}
+    header nav .navbox{
+        width: 886px;
+    }
+    header nav .navbox .gnb{
+        font-size: 3.8rem;
+        text-align: left;
+    }
+    header nav .navbox .gnb li:first-child a{margin:0;}
+    header nav .navbox .gnb li:nth-child(3) a{margin: 0; margin-top: 20px;}
+    header .logo{
+        width: 100%; height: 90px;
+    }
+    header .logo a{ 
+    width: 100%;
+    height: 80px;
+    }
+    header h1{ 
+        width: 100%;
+        font-size: 9vw;
+        top: 34%;
+    }
+    header h3{ 
+        width: 100%;
+        font-size: 3vw;
+        bottom: 68%;
+        
+    }
+    header .scroll{
+        width: 300px; height: 300px;
+        left: 73%; bottom: -97px;
+    }
+    .container main .salad{
+        padding-left: 5%;
+        padding-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container main .salad h2{
+        font-size: 9vw;
+        width: 33%;
+    }
+    .container main .salad .text1{
+        width: 30%;
+    }
+    .container main .salad  .text1 p{ font-size: 1.5vw;}
+    .container main .salad .text1 p:last-child{font-size: 1.2vw;}
+    .container main .swiper-container{ margin: 11% 0;}
+    .container main .swiper-container .swiper-wrapper .swiper-slide{height: 37vw;}
+    .container main .swiper-container .swiper-wrapper .swiper-slide p:first-child{
+        width: 80%;
+        margin: 17% auto;
+        font-size: 4vw;
+        margin-bottom: 10px;
+    }
+    .container main .swiper-container .swiper-wrapper .swiper-slide p:last-child{
+        margin: 0 auto;
+        width: 80%;
+        font-size: 1.6vw;
+        line-height: 1.6;
+    }
+    .container main .bg-container .txtimg{
+        height: 46vw;
+        bottom: 20px;
+    }
+    .container main .bg-container .bg-wrapper{height: 50vw;}
+    .container main .beverage {
+        padding-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container main .beverage > h2{
+        font-size: 9vw;
+        width: 34%;
+        margin-left: 5%;
+    }
+    .container main .beverage .txtbox2{
+        width: 35%;
+        font-size: 1.2vw;
+        margin-top: 95px;
+    }
+    /* special drink */
+    .container main .beverage .special-drink { 
+        width: 70%;
+        margin:0 auto;
+        margin-top: 10%;    
+    }
+    .container main .beverage .special-drink  h2{ font-size: 4vw;}
+    .container main .beverage .special-drink .drink{ display: flex;}
+    .container main .beverage .special-drink .drink p{ font-size: 2vw;}
+    .container main .beverage .special-drink .special .drink-img{ height: 20vw; margin-bottom: 10%;}
+    /* beer */
+    .container main .beverage  .beer{ width: 50%; margin-top: 5%;} 
+    .container main .beverage  .beer h2{ font-size: 4vw;}
+    .container main .beverage .beer .beer-wrapper{ width: 40%; margin: 111px auto}
+    .container main .beverage .beer .beer-img{ height: 20vw; margin-bottom: 10%;}
+    .container main .beverage .beer .beer-wrapper p{ font-size: 2vw;}
+
+
+    .container main .beverage .wine {width: 89%; margin-top: 5%;}
+    .container main .beverage .wine h2{ font-size: 4vw;}
+    .container main .beverage .wine .wine-list{ width: 89%; margin: 0 auto;}
+    .container main .beverage .wine .wine-list > li{ margin-bottom: 10%;}
+    .container main .beverage .wine .wine-list li{ font-size: 2.5vw;}
+    .container main .beverage .wine .wine-list li p{ font-size: 3.5vw;}
+   
+    footer{ display: flex; flex-wrap: wrap; justify-content: space-around;}
+    footer h3{ 
+        margin-left: 6%;
+        margin-top: 10%;
+        font-size: 3.5vw;
+    }
+    footer .site{ width: 100%;}
+    footer .site .sitelist{height: 127px; margin-bottom: 70px;}
+    footer .site .sitelist li {
+        width: 100px; height: 50px;
+     }
+    footer .site .sitelist li a{ 
+        width: 100px; height: 50px;
+    }
+    footer .contact{ width: 30%; margin-left: 4%;}
+    footer .contact p {
+        margin-left: 6%;
+        font-size: 2.5vw;
+        margin-top: 15px;
+    }
+    footer .follow {width: 30%;}
+    footer .follow .sns{ margin-left: 7.5%; }
+    footer .follow .sns li {
+        margin-right:11%;
+        width: 45px;
+        height: 45px;
+    }
+    footer .follow .sns li a{
+        width: 45px;
+        height: 45px;
+    }
+    footer .portfolio {width: 30%;}
+    footer .portfolio h3 a{
+        font-size: 3vw;
+    }
+    footer .copy p{ font-size: 1.5vw; margin: 200px 0 50px 0;}
+
+
+
+
+
+    }
+
+    
+ 
+    

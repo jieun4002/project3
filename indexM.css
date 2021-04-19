@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Passion One',apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1.4rem;
+    background-color: #EADCD4;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+h1, h2, h3, ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+a{display: block; text-decoration: none; color: inherit;}
+
+/* header */
+header{ position: relative;}
+header nav {
+    padding: 40px 0;
+    width: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 0; right: 20px
+}
+
+header nav .navbar a{
+    background: url(images/navbar.png) no-repeat 50% / contain;
+    width: 40px; height: 40px;
+    text-indent: -9999px;
+    margin-left: auto;
+}
+header nav .navbox {
+    background-color: #245B47;
+    width: 375px;
+    height: 812px;
+    position: absolute;
+    top: 0; right: -20px;
+    display: none;
+    z-index: 999;
+}
+header nav .navclose a{
+    background:url(images/navclose.png) no-repeat 50% /contain;
+    width: 40px; height: 40px;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-right: 20px;
+    text-indent: -9999px;
+}
+header nav .navbox .gnb{
+    font-size: 3.5rem;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+header nav .navbox .gnb li:nth-child(2) a{
+    color: #fff;
+    border-bottom: 2px #fff solid;
+    padding-bottom: 5px;
+    width: 158px;
+    margin: 20px auto;
+}
+header nav .navbox .gnb a{
+    margin-top: 20px;
+    color: #E59D3C;
+}
+header .logo {
+  padding-top: 20px;
+  width: 150px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 999
+}
+header .logo a{ 
+    background: url(images/logo.png) no-repeat 50% / contain;
+    text-indent: -9999px;
+    width: 150px;
+    height: 70px; 
+}
+
+header .video-wrap{
+   width: 100%;
+   overflow: hidden;
+   height: 540px;
+}
+
+header h1{
+    position: absolute;
+    color: #F8F4EF;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0;
+    font-size: 47px;
+    line-height: 0.8;
+    bottom: 39%;
+    width: 100%;
+    font-weight: normal;
+}
+header h3{ 
+  position: absolute;
+  color: #F8F4EF;
+  text-align: center; margin-top: 100px;
+  bottom: 61%;
+  width: 100%;
+  font-weight: normal;
+}
+header .scroll{
+  background: url(images/scroll_hand.png) no-repeat 50% / 25%;
+  position: absolute;
+  bottom: -54px;
+  left: 22%;
+  width: 200px; height: 200px;
+  z-index: 99;
+}
+@keyframes ro{
+  from{
+    transform: rotate(360deg);
+  }
+  to{
+    transform: rotate(0);
+  }
+}
+header .scroll img{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0;
+  animation: ro 10s linear infinite;
+}
+
+/* main */
+.container main{overflow: hidden;}
+/* enjoy */
+.container main .enjoy{
+  background-color:#BE3C48;
+  color: #F8F4EF;
+  font-family: "Nanum Gothic",apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+.container main .enjoy h2{
+  font-family: 'Passion One',apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  font-size: 65px;
+  line-height: 1;
+  width: 50%;
+  padding: 91px 0 0 25px;
+  font-weight: normal;
+}
+.container main .enjoy h3{
+  margin: 50px 0 0 25px;
+  font-size: 21px;
+  font-weight: normal;
+}
+.container main .enjoy h4{
+  font-size: 20px;
+  width: 64%;
+  margin: 15px 0 0 25px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+.container main .enjoy .txtbox{
+  margin: 80px 0 0 25px;
+  width: 83%;
+  line-height: 1.5;
+  font-size: 17px;
+}
+.container main .enjoy .txtbox span{ font-weight: 800;}
+.container main .enjoy .txtbox p:nth-child(odd){
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.container main .enjoy .txtbox p{margin-top: 10px;}
+
+.container main .enjoy .textimg {
+  background: url(images/textimg.png) no-repeat 50% / contain;
+  text-indent: -9999px;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  bottom: 40px;
+  z-index: 999;
+}
+.container main .enjoy .imgbox {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+.container main .enjoy .imgbox .enjoysteak{
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  text-indent: -9999px;
+  width: 32%;
+  height: 279px;
+  position: relative;
+}
+.container main .enjoy .imgbox .img1{
+  background-image:url(images/enjoysteak1.png);
+  margin-left: -26px;
+  padding-top: 60px;
+}
+.container main .enjoy .imgbox .img2{background-image:url(images/enjoysteak2.png); margin: 20px 0; padding-right: 72px;}
+.container main .enjoy .imgbox .img3{background-image:url(images/enjoysteak3.png); margin-top: 35px;}
+
+/* steak */
+.container main .steak{ position: relative; }
+.container main .steak > h3{ 
+  font-size: 57px;
+  text-align: center;
+  margin: 50px 0; 
+  color: #C4102F;
+  font-weight: normal;
+}
+.container main .steak .steakbox{ 
+  width: 100%;
+  margin: 0 auto;
+ 
+}
+.container main .steak .steakbox > div{ 
+  background-color: #E3D2C9;
+  width: 207px; height: 246px;
+  font-size: 33px;
+  margin: 45px auto;
+  font-weight: normal;
+}
+
+.container main .steak .steakbox div a{
+  text-align: center;
+  line-height: 0.8;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 169px; 
+  width: 187px;
+  padding: 40px 10px;
+}
+.container main .steak .steakbox .back{
+  width: 207px; height: 246px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  text-indent: -9999px;
+}
+.container main .steak .steakbox span{
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 32%;
+  font-size: 27px;
+  font-family: 'Caveat';
+  height: 50px;
+  margin-top: 50px;
+}
+.container main .steak .steakbox .back{ transform: rotateY(180deg);}
+.container main .steak .steakbox .flip {	transform: rotateY(180deg); }
+.container main .steak .front:hover span{ transform: rotate(10deg); transition: 0.5s;}
+/* steak1 토마호크 */
+.container main .steak .steaklist1 {
+  position: relative;
+  transition:1s; transform-style: preserve-3d;
+  padding: 5px 0;
+  transform: rotate(10deg);
+}
+.container main .steak .steaklist1 .tomahawk a{
+  color:#C4102F;
+  background-image: url(images/steakdeco1.png);
+  margin: 0 auto;
+}
+.container main .steak .steaklist1 .tomahawk a span{ background-image: url(images/moreborder1.png);}
+.container main .steak .steaklist1 .steakimg1 { 
+  background-image: url(images/steak1.png);
+}
+.container main .steak .steaklist1 .steak1{
+  position: absolute;
+  backface-visibility:hidden;
+}
+
+/* steak2 포터 */
+.container main .steak .steaklist2 {
+  position: relative;
+  transition:1s; transform-style: preserve-3d;
+  padding: 5px 0;
+  transform: rotate(-5deg);
+}
+.container main .steak .steaklist2 .potter a{ 
+  color: #245B47; 
+  margin: 0 auto; 
+  background-image: url(images/steakdeco2.png);
+}
+.container main .steak .steaklist2 .potter a span{ background-image: url(images/moreborder2.png);}
+.container main .steak .steaklist2 .steakimg2{
+  background-image: url(images/steak2.png);
+}
+.container main .steak .steaklist2 .steak2{
+  position: absolute;
+  backface-visibility:hidden;
+}
+/* steak3 엘본 */
+.container main .steak .steaklist3 {
+  position: relative;
+  transition:1s; transform-style: preserve-3d;
+  padding: 5px 0;
+  transform: rotate(8deg);
+}
+.container main .steak .steaklist3 .lbone a{
+  color: #E8A141; 
+  margin: 0 auto; 
+  background-image: url(images/steakdeco3.png);
+}
+.container main .steak .steaklist3 .lbone a span{
+  background-image: url(images/moreborder3.png);
+}
+.container main .steak .steaklist3 .steakimg3{
+  background-image: url(images/steak3.png);
+}
+.container main .steak .steaklist3 .steak3{
+  position: absolute;
+  backface-visibility:hidden;
+}
+
+/* steak4 스모키 */
+.container main .steak .steaklist4 {
+  position: relative;
+  transition:1s; transform-style: preserve-3d;
+  padding: 5px 0;
+  transform: rotate(-5deg);
+}
+.container main .steak .steaklist4 .smoky a{
+  color: #181C44; 
+  margin: 0 auto; 
+  background-image: url(images/steakdeco4.png);
+}
+.container main .steak .steaklist4 .smoky a span{
+  background-image: url(images/moreborder4.png);
+}
+.container main .steak .steaklist4 .steakimg4{
+  background-image: url(images/steak4.png);
+}
+.container main .steak .steaklist4 .steak4{
+  position: absolute;
+  backface-visibility:hidden;
+}
+
+/* steak5 시그니처 */
+.container main .steak .steaklist5{
+  position: relative;
+  transition:1s; transform-style: preserve-3d;
+  padding: 5px 0;
+  transform: rotate(10deg);
+}
+.container main .steak .steaklist5 .signature a{
+  color: #C4102F; 
+  margin: 0 auto; 
+  background-image: url(images/steakdeco5.png);
+  line-height: 0.9;
+}
+.container main .steak .steaklist5 .signature a span{
+  background-image: url(images/moreborder1.png);
+}
+.container main .steak .steaklist5 .steakimg5{
+  background-image: url(images/steak5.png);
+}
+.container main .steak .steaklist5  .steak5{
+  position: absolute;
+  backface-visibility:hidden;
+}
+
+/* salad bar 영역 */
+.container main .steak .saladbox{ margin-top: 200px; position: relative;}
+
+.container main .steak .saladbox h3 {
+  font-size: 87px;
+  text-align: center;
+  margin: 100px 0; 
+  color: #C4102F;
+  line-height: 0.8;
+  position: relative;
+  z-index: 9999;
+  font-weight: normal;
+ }
+ .container main .steak .saladbox .saladimg{
+   background: url(images/saladbar.png) no-repeat 50% / cover;
+   text-indent: -9999px;
+   width: 100%;
+   height: 299px;
+   position: absolute;
+   top: -94px; 
+ }
+
+ /* deliver 영역 */
+ .container main .delivery{
+  margin-top: 250px;
+  background-color: #181C44;
+ }
+ .container main .delivery .svgimg{
+   width: 96%;
+   margin: 0 auto;
+ }
+ .container main .delivery h3{
+   font-size: 45px;
+   color: #EADCD4;
+   text-align: center;
+   padding-top: 80px;
+   font-weight: normal;
+ }
+/* footer */
+ footer{ color: #C4102F;}
+ footer h3{
+   font-size: 40px;
+   margin-top: 50px;
+   margin-left: 28px;
+   font-weight: normal;
+ }
+ footer .site .sitelist{
+   display: flex;
+   border-bottom: 2px solid #C4102F;
+   height: 101px;
+   width: 90%;
+   margin: 0 auto;
+
+ }
+ footer .site .sitelist li{ 
+  width: 65px; height: 40px; 
+  margin: 50px auto; 
+}
+ footer .site .sitelist li a{
+   background-repeat: no-repeat;
+   background-position: 50%;
+   background-size: contain;
+   text-indent: -9999px;
+   width: 65px;
+   height: 40px;
+ }
+
+ footer .site .sitelist li:nth-child(1) a{
+   background-image: url(images/site1.png);
+ }
+ footer .site .sitelist li:nth-child(2) a{
+   background-image: url(images/site2.png);
+ }
+ footer .site .sitelist li:nth-child(3) a{
+   background-image:url(images/site3.png);
+ }
+ footer .site .sitelist li:nth-child(4) a{
+   background-image: url(images/site4.png);
+ }
+
+ footer .contact p{ 
+    text-transform: none;
+    margin:0;
+    margin-left: 31px;
+  }
+ footer .follow .sns{
+  display: flex;
+  margin-left: 43px;
+ } 
+ footer .follow .sns li a{
+  margin-top: 10px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  text-indent: -9999px;
+  width: 35px; height: 35px;
+ }
+ footer .follow .sns li:nth-child(1) a{background-image: url(images/instagram-filled.png);}
+ footer .follow .sns li:nth-child(2) a{background-image: url(images/facebook.png);}
+ footer .portfolio h3 a{
+  font-size: 32px;
+ }
+ footer .copy p{
+   font-size: 19px;
+   text-align: center;
+   margin:100px 0 60px 0;
+ }

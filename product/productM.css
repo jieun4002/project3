@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+body{
+  font-family: 'Passion One',apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  font-size: 1.4rem;
+  background-color: #EADCD4;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+h1, h2, h3, ul, p{margin: 0;list-style: none;padding: 0;}
+a{display: block; text-decoration: none; color: inherit;}
+/* header */
+header{
+  position: relative;
+  background: url(images/headerbg.png) no-repeat 50% / cover;
+  height: 67vh;
+  padding-top: 200px;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+header nav {
+    padding: 40px 0;
+    width: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 0; right: 20px
+}
+header nav .navbar a{
+    background: url(images/navbar.png) no-repeat 50% / contain;
+    width: 40px; height: 40px;
+    text-indent: -9999px;
+    margin-left: auto;
+}
+header nav .navbox {
+    background-color: #245B47;
+    width: 375px;
+    height: 812px;
+    position: absolute;
+    top: 0; right: -20px;
+    z-index: 999;
+    display: none;
+}
+header nav .navclose a{
+    background:url(images/navclose.png) no-repeat 50% /contain;
+    width: 40px; height: 40px;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-right: 20px;
+    text-indent: -9999px;
+}
+header nav .navbox .gnb{
+    font-size: 3.5rem;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+header nav .navbox .gnb li:nth-child(3) a{
+    color: #fff;
+    border-bottom: 2px #fff solid;
+    padding-bottom: 5px;
+    width: 240px;
+    margin: 20px auto;
+}
+header nav .navbox .gnb a{
+    margin-top: 20px;
+    color: #E59D3C;
+}
+header .logo {
+  padding-top: 20px;
+  width: 150px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 999
+}
+header .logo a{ 
+    background: url(images/logo.png) no-repeat 50% / contain;
+    text-indent: -9999px;
+    width: 150px;
+    height: 70px; 
+}
+header h1{
+  color: #F8F4EF;
+  text-align: center;
+  width: 100%;
+  line-height: 0.8;
+  font-weight: normal;
+  font-size: 56px;
+  position: absolute;
+  top: 38%;
+}
+header h3{ 
+  position: absolute;
+  color: #F8F4EF;
+  text-align: center; 
+  bottom: 63%;
+  width: 100%;
+  font-weight: normal;
+}
+header .scroll{
+  background: url(images/scroll_hand.png) no-repeat 50% / 25%;
+  position: absolute;
+  bottom: -54px;
+  left: 22%;
+  width: 200px; height: 200px;
+  z-index: 99;
+}
+
+header .scroll img{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0;
+  animation: ro 10s linear infinite;
+}
+@keyframes ro{
+  from{
+    transform: rotate(360deg);
+  }
+  to{
+    transform: rotate(0);
+  }
+}
+/* main */
+.container main{overflow: hidden;}
+/* salad */
+.container main .salad{
+  background-color:#E59D3C;
+  color: #F8F4EF;
+  font-family: "Nanum Gothic",apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.container main .salad  h2{
+  font-family: 'Passion One';
+  color: #F8F4EF;
+  font-size: 65px;
+  line-height: 1;
+  padding: 91px 0 0 25px;
+  font-weight: normal;
+  width: 50%;
+  line-height: 0.8;
+}
+.container main .salad  .text1{ width: 90%; margin: 60px auto;}
+.container main .salad  .text1 p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.container main .salad .txtbox1 .text1 p:last-child{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.container main .swiper-container .swiper-wrapper{display: flex; margin-bottom: 50px;}
+.container main .swiper-container .swiper-wrapper .swiper-slide{
+  width: 54%;
+  height: 168px;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container main .swiper-container .swiper-wrapper .swiper-slide p:first-child{
+ font-family:'Passion One';
+ margin: 30px 0 1px 17px;
+ font-size: 22px;
+}
+.container main .swiper-container .swiper-wrapper .swiper-slide p:last-child{
+  font-size: 14px;
+  margin-left: 17px;
+  width: 86%;
+}
+
+
+.container main .swiper-container .swiper-wrapper .menu1{
+  background-image: url(images/soup-1.png)
+}
+.container main .swiper-container .swiper-wrapper  .menu2{
+  background-image: url(images/salad-1.png)
+}
+.container main .swiper-container .swiper-wrapper  .menu3{
+  background-image: url(images/mixedsalad-1.png)
+}
+.container main .swiper-container .swiper-wrapper  .menu4{
+  background-image: url(images/noodle-1.png)
+}
+.container main .swiper-container .swiper-wrapper .menu5{
+  background-image: url(images/bibimbap-1.png)
+}
+.container main .swiper-container .swiper-wrapper  .menu6{
+  background-image: url(images/pasta-1.png)
+}
+.container main .swiper-container .swiper-wrapper  .menu7{
+  background-image: url(images/pizza-1.png)
+}
+.container main .swiper-container .swiper-wrapper .menu8{
+  background-image: url(images/hot-1.png)
+}
+.container main .swiper-container .swiper-wrapper  .menu9{
+  background-image: url(images/dessert-1.png)
+}
+.container main .bg-container{position: relative}
+.container main .bg-container .txtimg{
+  position: absolute;
+  text-indent: -9999px;
+  background: url(images/textimg.png) no-repeat 50%/ contain;
+  width: 100%;
+  height: 500px;
+  bottom: 0;
+}
+
+.container main .bg-container .bg-wrapper{
+  background: url(images/spin.png) no-repeat 50% / cover;
+  text-indent: -9999px;
+  height: 450px;
+}
+
+.container main .beverage{
+  background-color: #003B2D;
+  color: #F8F4EF;
+  padding-bottom: 50px;
+}
+.container main .beverage > h2{
+  color: #F8F4EF;
+  font-size: 65px;
+  line-height: 1;
+  padding: 91px 0 0 25px;
+  font-weight: normal;
+}
+
+.container main .beverage .txtbox2 {
+  width: 91%;
+  margin: 0 auto;
+  margin-top: 50px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.container main .beverage .special-drink{width: 100%; margin: 0 auto;}
+.container main .beverage .special-drink h2{
+  font-size: 40px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.container main .beverage .special-drink .special .drink-img{
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width: 50%;
+  height: 100px;
+  text-align: center;
+  margin: 10px auto;
+}
+.container main .beverage .special-drink .special{
+  width: 100%;
+  text-align: center;
+  margin:80px auto
+}
+.container main .beverage .special-drink .special p:nth-child(2){ margin-bottom: 5px;}
+.container main .beverage .drink1{background-image: url(images/ade1.png);}
+.container main .beverage .drink2{background-image: url(images/ade2.png);}
+.container main .beverage .drink3{background-image: url(images/ade3.png);}
+
+.container main .beverage  .beer{
+  width: 100%;
+  margin: 0 auto;
+}
+.container main .beverage  .beer h2{
+  margin: 80px auto;
+  text-align: center;
+  font-size: 40px;
+}
+.container main .beverage  .beer .beer-img{
+  background: url(images/beer.png) no-repeat 50% / contain;
+  width: 50%;
+  height: 100px;
+  text-indent: -9999px;
+  margin: 10px auto;
+}
+.container main .beverage  .beer .beer-wrapper{
+  width: 100%;
+  text-align: center;
+  margin:80px auto
+}
+.container main .beverage  .beer .beer-wrapper p{
+  margin-bottom: 5px;
+}
+.container main .beverage .wine{width: 100%; margin: 0 auto;}
+.container main .beverage .wine h2{
+  margin: 80px auto;
+  text-align: center;
+  font-size: 40px;
+}
+.container main .beverage .wine .wine-list > li{ 
+  margin-bottom: 30px;
+}
+.container main .beverage .wine .wine-list li{
+  font-size: 16px;
+  font-weight: normal;
+
+}
+.container main .beverage .wine .wine-list li p{
+  font-size: 30px;
+  width: 90%;
+  margin: 6px auto;
+}
+.container main .beverage .wine .wine-list ul{
+  display: flex;
+}
+.container main .beverage .wine .wine-list .sparkling li{margin: 0 auto} 
+.container main .beverage .wine .wine-list .sparkling li:first-child{
+  width: 65%;
+  margin: 3px auto;
+}
+.container main .beverage .wine .wine-list .white li{margin: 0 auto;}
+.container main .beverage .wine .wine-list .white li:first-child{
+  width:66%;
+  margin: 3px auto;
+}
+.container main .beverage .wine .wine-list .red li{ margin: 0 auto;}
+.container main .beverage .wine .wine-list .red li:first-child{
+  width: 66%;
+  margin: 3px auto;
+}
+/* footer */
+ footer{ color: #C4102F;}
+ footer h3{
+   font-size: 40px;
+   margin-top: 50px;
+   margin-left: 28px;
+   font-weight: normal;
+ }
+ footer .site .sitelist{
+   display: flex;
+   border-bottom: 2px solid #C4102F;
+   height: 101px;
+   width: 90%;
+   margin: 0 auto;
+
+ }
+ footer .site .sitelist li{ 
+  width: 65px; height: 40px; 
+  margin: 50px auto; 
+}
+ footer .site .sitelist li a{
+   background-repeat: no-repeat;
+   background-position: 50%;
+   background-size: contain;
+   text-indent: -9999px;
+   width: 65px;
+   height: 40px;
+ }
+
+ footer .site .sitelist li:nth-child(1) a{
+   background-image: url(images/site1.png);
+ }
+ footer .site .sitelist li:nth-child(2) a{
+   background-image: url(images/site2.png);
+ }
+ footer .site .sitelist li:nth-child(3) a{
+   background-image:url(images/site3.png);
+ }
+ footer .site .sitelist li:nth-child(4) a{
+   background-image: url(images/site4.png);
+ }
+
+ footer .contact p{ 
+    text-transform: none;
+    margin:0;
+    margin-left: 31px;
+  }
+ footer .follow .sns{
+  display: flex;
+  margin-left: 43px;
+ } 
+ footer .follow .sns li a{
+  margin-top: 10px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  text-indent: -9999px;
+  width: 35px; height: 35px;
+ }
+ footer .follow .sns li:nth-child(1) a{background-image: url(images/instagram-filled.png);}
+ footer .follow .sns li:nth-child(2) a{background-image: url(images/facebook.png);}
+ footer .portfolio h3 a{
+  font-size: 32px;
+ }
+ footer .copy p{
+   font-size: 19px;
+   text-align: center;
+   margin:100px 0 60px 0;
+ }
