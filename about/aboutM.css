@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Passion One',apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1.4rem;
+    background-color: #EADCD4;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+h1, h2, h3, ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+a{display: block; text-decoration: none; color: inherit;}
+
+/* header */
+header{ 
+  background: url(images/abouthead.png) no-repeat 0 / cover;
+  position: relative;
+  height: 67vh;
+  padding-top: 200px;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+header nav {
+    padding: 40px 0;
+    width: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 0; right: 20px
+}
+
+header nav .navbar a{
+    background: url(images/navbar.png) no-repeat 50% / contain;
+    width: 40px; height: 40px;
+    text-indent: -9999px;
+    margin-left: auto;
+}
+header nav .navbox {
+    background-color: #245B47;
+    width: 375px;
+    height: 812px;
+    position: absolute;
+    top: 0; right: -20px;
+    display: none;
+    z-index: 999;
+}
+header nav .navclose a{
+    background:url(images/navclose.png) no-repeat 50% /contain;
+    width: 40px; height: 40px;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-right: 20px;
+    text-indent: -9999px;
+}
+header nav .navbox .gnb{
+    font-size: 3.5rem;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+header nav .navbox .gnb li:nth-child(1) a{
+    color: #fff;
+    border-bottom: 2px #fff solid;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+header nav .navbox .gnb a{
+    margin-top: 20px;
+    color: #E59D3C;
+}
+header .logo {
+  padding-top: 20px;
+  width: 150px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 999
+}
+header .logo a{ 
+    background: url(images/logo.png) no-repeat 50% / contain;
+    text-indent: -9999px;
+    width: 150px;
+    height: 70px; 
+}
+
+/* header .video-wrap{
+   width: 100%;
+   overflow: hidden;
+   height: 540px;
+} */
+
+header h1{
+    color: #F8F4EF;
+    text-align: center;
+    width: 100%;
+    line-height: 0.8;
+    font-weight: normal;
+    font-size: 56px;
+    position: absolute;
+    top: 38%;
+}
+header h3{ 
+  position: absolute;
+  color: #F8F4EF;
+  text-align: center; 
+  bottom: 63%;
+  width: 100%;
+  font-weight: normal;
+}
+header .scroll{
+  background: url(images/scroll_hand.png) no-repeat 50% / 25%;
+  position: absolute;
+  bottom: -54px;
+  left: 22%;
+  width: 200px; height: 200px;
+  z-index: 99;
+}
+@keyframes ro{
+  from{
+    transform: rotate(360deg);
+  }
+  to{
+    transform: rotate(0);
+  }
+}
+header .scroll img{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0;
+  animation: ro 10s linear infinite;
+}
+/* section */
+.container {}
+.container .about{
+  background-color: #245B47;
+  font-family: 'Nanum Gothic',apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  color: #F8F4EF;
+  padding-bottom: 50px;
+}
+.container .about p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+.container .about .section1 h2{
+  font-family: 'Passion One';
+  color: #F8F4EF;
+  font-size: 65px;
+  line-height: 1;
+  padding: 91px 0 0 25px;
+  font-weight: normal;
+}
+.container .about .section1 .txtbox1{
+  width: 90%;
+  margin: 80px auto;
+}
+.container .about .section1 .txtbox1 h3{
+  margin: 50px 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.container .about .section2 .txtbox2{
+  width: 90%;
+  margin: 0 auto;
+}
+.container .about .section2 .txtbox2 h4{
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.container .about .section2 .txtbox2 p{ 
+  margin-bottom: 50px;
+}
+.container .about .section2  .section-img1{
+  width: 90%;
+  margin: 100px auto;
+}
+.container .about .section2 .section-img1 img{
+  width: 100%;
+  display: block;
+}
+.container .about .section3{}
+.container .about .section3 .txtbox3 {
+  width: 90%;
+  margin: 0 auto;
+}
+.container .about .section3 .txtbox3 h4{ 
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.container .about .section3 .txtbox3 p{margin-bottom: 50px;}
+.container .about .section3 .section-img2{
+  width: 90%;
+  margin: 100px auto;
+
+}
+.container .about .section3 .section-img2 img{
+  width: 100%;
+}
+
+.container .news{
+  background-color: #E59D3C;
+  padding-top: 50px;
+  color: #F8F4EF;
+}
+.container .news h2{
+  font-family: 'Passion One';
+  color: #F8F4EF;
+  font-size: 65px;
+  line-height: 1;
+  font-weight: normal;
+  text-align: center;
+
+}
+.container .news .swiper-container{
+  font-size: 17px;
+  font-family: 'Nanum Gothic',apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  height: 29vh;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.container .news .swiper-container .swiper-wrapper{
+  display: flex;
+}
+.container .news .swiper-container .vips{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  height: 20vh;
+}
+.container .news .swiper-container .news1{background-image: url(images/news_img1.png);}
+.container .news .swiper-container .news2{background-image: url(images/news_img2.png);}
+.container .news .swiper-container .news3{background-image: url(images/news_img3.png);}
+.container .news .swiper-container .news4{background-image: url(images/news_img4.png);}
+.container .news .swiper-container .news5{background-image: url(images/news_img5.png);}
+.container .news .swiper-container .vips p{
+  width: 93%;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  line-height: 1.6;
+}
+.container .news .swiper-container .vips p:last-child{
+  margin-top: 10px;
+}
+
+.container .news .swiper-container .vips:active{ transform: rotate(-5deg); color: #000;}
+.container .news .swiper-container .news1:active{
+  background-image: url(images/news_img1-1.png);
+  
+}
+.container .news .swiper-container .news2:active{background-image:url(images/news_img2-1.png);}
+.container .news .swiper-container .news3:active{background-image:url(images/news_img3-1.png);}
+.container .news .swiper-container .news4:active{background-image:url(images/news_img4-1.png);}
+.container .news .swiper-container .news5:active{background-image:url(images/news_img5-1.png);}
+
+/* footer */
+footer{ color: #C4102F;  font-weight: normal;}
+footer .site{}
+footer h3{
+  font-size: 40px;
+  margin-top: 50px;
+  margin-left: 28px;
+}
+footer .site .sitelist{
+  display: flex;
+  border-bottom: 2px solid #C4102F;
+  height: 101px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+footer .site .sitelist li{ 
+ width: 65px; height: 40px; 
+ margin: 50px auto; 
+}
+footer .site .sitelist li a{
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  text-indent: -9999px;
+  width: 65px;
+  height: 40px;
+}
+
+footer .site .sitelist li:nth-child(1) a{
+  background-image: url(images/site1.png);
+}
+footer .site .sitelist li:nth-child(2) a{
+  background-image: url(images/site2.png);
+}
+footer .site .sitelist li:nth-child(3) a{
+  background-image:url(images/site3.png);
+}
+footer .site .sitelist li:nth-child(4) a{
+  background-image: url(images/site4.png);
+}
+
+footer .contact p{ 
+   text-transform: none;
+   margin:0;
+   margin-left: 31px;
+ }
+footer .follow .sns{
+ display: flex;
+ margin-left: 43px;
+} 
+footer .follow .sns li a{
+ margin-top: 10px;
+ margin-right: 10px;
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: 50%;
+ text-indent: -9999px;
+ width: 35px; height: 35px;
+}
+footer .follow .sns li:nth-child(1) a{background-image: url(images/instagram-filled.png);}
+footer .follow .sns li:nth-child(2) a{background-image: url(images/facebook.png);}
+footer .portfolio h3 a{
+ font-size: 32px;
+}
+footer .copy p{
+  font-size: 19px;
+  text-align: center;
+  margin:100px 0 60px 0;
+}

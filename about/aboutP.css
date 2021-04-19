@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@media (min-width:1440px){
+  header {
+    height: 52vw;
+  }
+  header nav {
+      width: 10%;
+      z-index: 9999;
+  }
+  header nav .navbar a{ width: 50px; height: 50px;}
+  header nav .navbox{
+      width: 886px;
+  }
+  header nav .navbox .gnb{
+      font-size: 3.8rem;
+      text-align: left;
+  }
+  header nav .navbox .gnb li:first-child a{margin:0; width: 16vw;}
+  header .logo{
+      width: 100%; height: 90px;
+  }
+  header .logo a{ 
+     width: 100%;
+     height: 80px;
+  }
+  header h1{ 
+      width: 100%;
+      font-size: 10vw;
+      top: 31%;
+  }
+  header h3{ 
+      width: 100%;
+      font-size: 3vw;
+      bottom: 69%;
+  }
+  header .scroll{
+      width: 300px; height: 300px;
+      left: 73%; bottom: -97px;
+  }
+
+  .container .about p{font-weight: 1vw;}
+  .container .about h4{ font-size: 1.3vw;}
+  .container .about .section1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    padding-top: 10%;
+  }
+  .container .about .section1 h2{
+    width: 50%;
+    font-size: 9vw;
+  }
+  .container .about .section1 .txtbox1{
+    width: 31%;
+  }
+  .container .about .section1 .txtbox1 h3{font-size: 1.4vw;}
+
+
+  .container .about .section2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 55px;
+  }
+  .container .about .section2 .section-img1{
+    width: 32%;
+    margin-top: 0;
+  }
+  .container .about .section2 .txtbox2{width: 40%;}
+  .container .about .section2 .txtbox2 h4{font-size: 1.3vw;}
+  .container .about .section3{
+    display: flex;
+  }
+  .container .about .section3 .txtbox3{ width: 40%;}
+  .container .about .section3 .section-img2{
+    width: 43%;
+    margin-top: 0;
+  }
+  .container .news h2{ font-size: 8vw;}
+  .container .news .swiper-container { height:73vh}
+  .container .news .swiper-container .vips{height: 63vh;}
+  .container .news .swiper-container .vips p{
+    font-size: 1.3vw;
+    width: 67%;
+    margin-top: 54%;
+    font-weight: normal;
+  }
+
+
+
+footer{ display: flex; flex-wrap: wrap; justify-content: space-around;}
+footer h3{ 
+    margin-left: 6%;
+    margin-top: 10%;
+    font-size: 3.5vw;
+}
+footer .site{ width: 100%;}
+footer .site .sitelist{height: 127px; margin-bottom: 70px;}
+footer .site .sitelist li {
+    width: 100px; height: 50px;
+ }
+footer .site .sitelist li a{ 
+    width: 100px; height: 50px;
+}
+footer .contact{ width: 30%; margin-left: 4%;}
+footer .contact p {
+    margin-left: 6%;
+    font-size: 2.5vw;
+    margin-top: 15px;
+}
+footer .follow {width: 30%;}
+footer .follow .sns{ margin-left: 7.5%; }
+footer .follow .sns li {
+    margin-right:11%;
+    width: 45px;
+    height: 45px;
+}
+footer .follow .sns li a{
+    width: 45px;
+    height: 45px;
+}
+footer .portfolio {width: 30%;}
+footer .portfolio h3 a{
+    font-size: 3vw;
+}
+footer .copy p{ font-size: 1.5vw; margin: 200px 0 50px 0;}
+}
